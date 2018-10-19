@@ -8,7 +8,6 @@ if (isset($_SESSION['name'])) {
         $_SESSION['panier'][$_GET['add_to_cart']] = [];
         if (!in_array($_GET['add_to_cart'],$_SESSION['panier'])) {
             $_SESSION['panier'][$_GET['add_to_cart']] = 1;
-            var_dump($_SESSION['panier']);
         }
 
     }
@@ -18,6 +17,9 @@ if (empty($_SESSION['name'])) {
     exit();
 }
 ?>
+<div class="container-fluid text-right">
+    <strong>Hello <?php echo $_SESSION['name'] ?> !</strong>
+</div>
 <section class="cookies container-fluid">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">

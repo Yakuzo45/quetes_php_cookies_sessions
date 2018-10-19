@@ -14,7 +14,6 @@ if ($_POST) {
     }
 }
 session_destroy();
-var_dump($_SESSION);
 
 ?>
 <div class="container" style="margin-top:40px">
