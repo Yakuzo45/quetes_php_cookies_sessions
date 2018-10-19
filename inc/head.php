@@ -42,6 +42,12 @@
               Cart
             </a>
           </li>
+            <li>
+                <a href="/login.php" class="btn btn-danger navbar-btn">
+                    <span aria-hidden="true"></span>
+                    Log Out
+                </a>
+            </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
